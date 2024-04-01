@@ -12,6 +12,7 @@ public class ImmutableMyDate {
         this.day = day;
     }
 
+        //with는 관례인데 불변객체에서 값을 변경하는 경우 메소드이름을 with라고함
     public ImmutableMyDate withYear(int newYear) {
         return new ImmutableMyDate(newYear, month, day);
     }
