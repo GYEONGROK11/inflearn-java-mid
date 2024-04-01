@@ -8,7 +8,7 @@ public class StringUtilsMain1 {
         Object obj = new Object();
         String str = "Hello, Java!";
 
-        // valueOf 메서드
+        // valueOf 메서드  다른 기본형 값을 문자열로 바꿔줌
         String numString = String.valueOf(num);
         System.out.println("숫자의 문자열 값: " + numString);
         String boolString = String.valueOf(bool);
@@ -23,6 +23,7 @@ public class StringUtilsMain1 {
         // toCharArray 메서드
         char[] strCharArray = str.toCharArray();
         System.out.println("문자열을 문자 배열로 변환: " + strCharArray);
+        System.out.println(strCharArray);
         for (char c : strCharArray) {
             System.out.print(c);
         }

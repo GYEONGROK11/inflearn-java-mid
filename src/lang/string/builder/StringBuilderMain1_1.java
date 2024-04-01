@@ -1,7 +1,7 @@
 package lang.string.builder;
 
 public class StringBuilderMain1_1 {
-
+    //불변인 스트링을 가변 스트링을 사용함
     public static void main(String[] args) {
         StringBuilder sb = new StringBuilder();
         sb.append("A");
@@ -22,5 +22,7 @@ public class StringBuilderMain1_1 {
         //StringBuilder -> String
         String string = sb.toString();
         System.out.println("string = " + string);
+
+
     }
 }

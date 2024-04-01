@@ -5,13 +5,13 @@ public class StringSplitJoinMain {
     public static void main(String[] args) {
         String str = "Apple,Banana,Orange";
 
-        // split()
+        // split()  분할
         String[] splitStr = str.split(",");
         for (String s : splitStr) {
             System.out.println(s);
         }
 
-        // join()
+        // join()   연결
         String joinedStr = String.join("-", "A", "B", "C");
         System.out.println("연결된 문자열 = " + joinedStr);
 
