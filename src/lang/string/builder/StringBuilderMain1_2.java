@@ -9,6 +9,7 @@ public class StringBuilderMain1_2 {
                 .delete(4, 8)
                 .reverse()
                 .toString();
+        //메소드 체이닝 기법
 
         System.out.println("string = " + string);
     }
