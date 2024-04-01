@@ -9,6 +9,8 @@ public class TestString9 {
         String idPart = parts[0];
         String domainPart = parts[1];
 
+
+
         System.out.println("ID: " + idPart);
         System.out.println("Domain: " + domainPart);
     }

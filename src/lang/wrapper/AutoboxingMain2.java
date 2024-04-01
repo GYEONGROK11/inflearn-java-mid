@@ -5,7 +5,7 @@ public class AutoboxingMain2 {
     public static void main(String[] args) {
         // Primitive -> Wrapper
         int value = 7;
-        Integer boxedValue = value; // 오토 박싱(Auto-boxing)
+        Integer boxedValue = value; // 오토 박싱(Auto-boxing)   컴파일 할 때 추가해 줌
 
         // Wrapper -> Primitive
         int unboxedValue = boxedValue; // 오토 언박싱(Auto-Unboxing)

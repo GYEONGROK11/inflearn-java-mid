@@ -7,6 +7,7 @@ public class TestString5 {
         String ext = ".txt";
 
         int extIndex = str.indexOf(ext);
+        System.out.println(extIndex);
         String filename = str.substring(0, extIndex);
         String extName = str.substring(extIndex);
         System.out.println("filename = " + filename);

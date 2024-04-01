@@ -24,6 +24,6 @@ public class MyInteger {
 
     @Override
     public String toString() {
-        return String.valueOf(value);
+        return String.valueOf(value);  //숫자를 문자로 변경
     }
 }
