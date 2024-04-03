@@ -4,8 +4,8 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
 public class ClassMetaMain {
-    public static void main(String[] args) throws Exception {
-        //Class 조회
+    public static void main(String[] args) throws Exception { //체크예외
+        //Class 조회   String의 모든 필드와 메스드 등 클래스 자체를 조회함
         Class clazz = String.class; // 1. 클래스에서 조회
         //Class clazz = new String().getClass(); // 2. 인스턴스에서 조회
         //Class clazz = Class.forName("java.lang.String"); // 3. 문자열로 조회
@@ -23,7 +23,7 @@ public class ClassMetaMain {
         }
 
         // 상위 클래스 정보 출력
-        System.out.println("Superclass: " + clazz.getSuperclass().getName());
+        System.out.println("Superclass: " + clazz.getSuperclass().getName()); //오브젝트
 
         // 인터페이스 정보 출력
         Class[] interfaces = clazz.getInterfaces();

@@ -25,12 +25,14 @@ public class SystemMain {
         char[] originalArray = {'h', 'e', 'l', 'l', 'o'};
         char[] copiedArray = new char[5];
         System.arraycopy(originalArray, 0, copiedArray, 0, originalArray.length);
-
+                                     // 오리지날의 0번방 부터     ,카피할곳의 0번방 부터
         // 배열 출력
         System.out.println("copiedArray = " + copiedArray);
         System.out.println("Arrays.toString = " + Arrays.toString(copiedArray));
 
         // 프로그램 종료
         System.exit(0);
+        System.out.println("종료되서안나옴"); //가급적 사용하지 않음
+
     }
 }
