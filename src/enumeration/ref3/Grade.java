@@ -13,7 +13,7 @@ public enum Grade {
         return discountPercent;
     }
 
-    //추가
+    //추가 -밖에서 계산하지 않고 안에서 계산 - 객체지향적으로 변경
     public int discount(int price) {
         return price * discountPercent / 100;
     }

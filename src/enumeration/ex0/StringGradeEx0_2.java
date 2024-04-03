@@ -6,7 +6,7 @@ public class StringGradeEx0_2 {
         int price = 10000;
 
         DiscountService discountService = new DiscountService();
-
+        //enum이 존재하는 이유 : 값의 제한 부족 : 오타가 유효함, 컴파일 오류를 감지 할 수 없음
         // 존재하지 않는 등급
         int vip = discountService.discount("VIP", price);
         System.out.println("VIP 등급의 할인 금액: " + vip);

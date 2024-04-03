@@ -5,7 +5,7 @@ public class DiscountService {
     public int discount(Grade grade, int price) {
         int discountPercent = 0;
 
-        if (grade == Grade.BASIC) {
+        if (grade == Grade.BASIC) { //art+enter로 static import 사용 가능
             discountPercent = 10;
         } else if (grade == Grade.GOLD) {
             discountPercent = 20;

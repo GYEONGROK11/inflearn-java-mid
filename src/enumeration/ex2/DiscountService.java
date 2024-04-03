@@ -2,7 +2,7 @@ package enumeration.ex2;
 
 public class DiscountService {
 
-    public int discount(ClassGrade classGrade, int price) {
+    public int discount(ClassGrade classGrade, int price) { //처음부터 타입을 받음
         int discountPercent = 0;
 
         if (classGrade == ClassGrade.BASIC) {
