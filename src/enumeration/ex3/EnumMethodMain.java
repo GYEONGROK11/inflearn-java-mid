@@ -7,7 +7,7 @@ public class EnumMethodMain {
     public static void main(String[] args) {
 
         //모든 ENUM 반환
-        Grade[] values = Grade.values();
+        Grade[] values = Grade.values();  //셀렉트 박스 만들때 유용
         System.out.println("values = " + Arrays.toString(values));
         for (Grade value : values) {
             System.out.println("name=" + value.name() + ", ordinal=" + value.ordinal());
