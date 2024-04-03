@@ -12,7 +12,7 @@ public class LottoGenerator {
         count = 0;
 
         while (count < 6) {
-            // 1부터 45 사이의 숫자 생성
+            // 1부터 45 사이의 숫자 6개 생성
             int number = random.nextInt(45) + 1;
             // 중복되지 않은 경우에만 배열에 추가
             if (isUnique(number)) {
