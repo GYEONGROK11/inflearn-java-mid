@@ -32,5 +32,7 @@ public class LocalDateTimeMain {
         System.out.println("현재 날짜시간이 지정 날짜시간보다 이전인가? " + nowDt.isBefore(ofDt));
         System.out.println("현재 날짜시간이 지정 날짜시간보다 이후인가? " + nowDt.isAfter(ofDt));
         System.out.println("현재 날짜시간과 지정 날짜시간이 같은가? " + nowDt.isEqual(ofDt));
+        //그냥 equal()말고 isequal()로 쓰는 이유는? -> 현재 날짜시간과 지정 날짜시간이 같은지 비교할 때 사용 (시간적으로 계산 서울의 9시 영국의 0시 같음)
+        //equals()는 객체의 내용이 같은지 비교할 때 사용 (시간 + 타임존) - 서울과 영국은 다름
     }
 }

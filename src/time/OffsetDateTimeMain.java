@@ -7,6 +7,7 @@ import java.time.ZoneOffset;
 public class OffsetDateTimeMain {
 
     public static void main(String[] args) {
+        //zoneId가 없음 - 일광제 적용x
         OffsetDateTime nowOdt = OffsetDateTime.now();
         System.out.println("nowOdt = " + nowOdt);
 

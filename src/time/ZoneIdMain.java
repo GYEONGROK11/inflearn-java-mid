@@ -10,7 +10,7 @@ public class ZoneIdMain {
             System.out.println(zoneId + " | " + zoneId.getRules());
         }
 
-        ZoneId zoneId = ZoneId.systemDefault();
+        ZoneId zoneId = ZoneId.systemDefault(); // pc의 시스템 설정에 따라서 반환
         System.out.println("ZoneId.systemDefault = " + zoneId);
 
         ZoneId seoulZoneId = ZoneId.of("Asia/Seoul");
