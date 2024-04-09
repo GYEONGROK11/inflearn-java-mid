@@ -7,6 +7,8 @@ public class NestedOuter {
 
     static class Nested { //정적중첩클래스 : 나의 안에 있지만 내것이 아님, 스태틱이 붙음
 
+        //다른 클래스 밖에 빼든 안에 넣든 사용법은 같다고 보면된다 - 유일한 차이는 private static 멤버에 접근할 수 있다는 점
+
 
         private int nestedInstanceValue = 1;
 

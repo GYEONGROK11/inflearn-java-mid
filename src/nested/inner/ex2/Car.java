@@ -11,6 +11,9 @@ public class Car {
         this.engine = new Engine();
     }
 
+    //엔진에서만 사용하는 get 메소드 지움, 바로 변수 사용
+
+
     public void start() {
         engine.start();
         System.out.println(model + " 시작 완료");
