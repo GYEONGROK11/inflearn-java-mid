@@ -7,6 +7,7 @@ import java.time.temporal.TemporalAdjuster;
 import java.time.temporal.TemporalAdjusters;
 
 public class ChangeTimeWithMain {
+    //with - 불변일때 새로운 객체를 생성
 
     public static void main(String[] args) {
         LocalDateTime dt = LocalDateTime.of(2018, 1, 1, 13, 30, 59);
@@ -15,7 +16,7 @@ public class ChangeTimeWithMain {
         LocalDateTime changedDt1 = dt.with(ChronoField.YEAR, 2020);
         System.out.println("changedDt1 = " + changedDt1);
 
-        LocalDateTime changedDt2 = dt.withYear(2020);
+        LocalDateTime changedDt2 = dt.withYear(2020); //편의 메소드
         System.out.println("changedDt2 = " + changedDt2);
 
         //TemporalAdjuster 사용

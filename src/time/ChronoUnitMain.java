@@ -6,7 +6,7 @@ import java.time.temporal.ChronoUnit;
 public class ChronoUnitMain {
 
     public static void main(String[] args) {
-        ChronoUnit[] values = ChronoUnit.values();
+        ChronoUnit[] values = ChronoUnit.values(); //시간 단위의 이넘 상수 - 몇개의 메소드도 있음
         for (ChronoUnit value : values) {
             System.out.println("value = " + value);
         }

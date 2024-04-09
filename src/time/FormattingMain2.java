@@ -10,6 +10,7 @@ public class FormattingMain2 {
         LocalDateTime now = LocalDateTime.of(2024, 12, 31, 13, 30, 59);
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         String formattedDateTime = now.format(formatter);
+        System.out.println("날짜와 시간 : " + now);
         System.out.println("날짜와 시간 포맷팅: " + formattedDateTime);
 
         // 파싱: 문자를 날짜와 시간으로

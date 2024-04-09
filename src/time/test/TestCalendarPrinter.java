@@ -20,20 +20,20 @@ public class TestCalendarPrinter {
 
     private static void printCalender(int year, int month) {
         LocalDate firstDayOfMonth = LocalDate.of(year, month, 1);
-        LocalDate firstDayOfNextMonth = firstDayOfMonth.plusMonths(1);
+        LocalDate firstDayOfNextMonth = firstDayOfMonth.plusMonths(1); //다음달 직전까지 출력
 
         //월요일=1(1%7=1) ... 일요일7(7%7=0)
         int offsetWeekDays = firstDayOfMonth.getDayOfWeek().getValue() % 7;
 
         System.out.println("Su Mo Tu We Th Fr Sa ");
         for (int i = 0; i < offsetWeekDays; i++) {
-            System.out.print("   ");
+            System.out.print("   ");  // 첫날을 위한 띄어쓰기
         }
 
-        LocalDate dayIterator = firstDayOfMonth;
-        while (dayIterator.isBefore(firstDayOfNextMonth)) {
+        LocalDate dayIterator = firstDayOfMonth;  //1일부터 찍어줌
+        while (dayIterator.isBefore(firstDayOfNextMonth)) { //- 마지막 전까지(다음달 직전)
             System.out.printf("%2d ", dayIterator.getDayOfMonth());
-            if (dayIterator.getDayOfWeek() == DayOfWeek.SATURDAY) {
+            if (dayIterator.getDayOfWeek() == DayOfWeek.SATURDAY) {  //토요일 마다 엔터
                 System.out.println();
             }
             dayIterator = dayIterator.plusDays(1);

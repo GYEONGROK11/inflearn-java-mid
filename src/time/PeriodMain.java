@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.Period;
 
-public class PeriodMain {
+public class PeriodMain { //시간사이의 간격을 년월일 단위로 나타냄
 
     public static void main(String[] args) {
         //생성
@@ -20,8 +20,9 @@ public class PeriodMain {
 
         //기간 차이
         LocalDate startDate = LocalDate.of(2023, 1, 1);
-        LocalDate endDate = LocalDate.of(2023, 4, 2);
+        LocalDate endDate = LocalDate.of(2023, 5, 15);
         Period between = Period.between(startDate, endDate);
+        System.out.println(between);
         System.out.println("기간: " + between.getMonths() +"개월 " + between.getDays() + "일");
     }
 }
