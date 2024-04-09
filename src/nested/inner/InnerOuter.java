@@ -5,7 +5,7 @@ public class InnerOuter {
     private static int outClassValue = 3;
     private int outInstanceValue = 2;
 
-    class Inner {
+    class Inner {  //내부 클래스 : 나의 안에 있고 내것, 바깥 클래스의 인스턴스의 멤버에 접근 가능
         private int innerInstanceValue = 1;
 
         public void print() {
