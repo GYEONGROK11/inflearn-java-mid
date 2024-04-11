@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Ex1RefMainV1 {
 
-    public static void hello(Process process) {
+    public static void hello(Process process) { //메서드만 전달하지 못하기 때문에 인스턴스를 전달함 거기서 run을 호출
         System.out.println("프로그램 시작");
 
         //코드 조각 시작
@@ -14,7 +14,7 @@ public class Ex1RefMainV1 {
         System.out.println("프로그램 종료");
     }
 
-    static class Dice implements Process {
+    static class Dice implements Process { //클래스 생성
 
         @Override
         public void run() {

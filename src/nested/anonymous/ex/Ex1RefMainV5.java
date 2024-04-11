@@ -17,7 +17,7 @@ public class Ex1RefMainV5 {
     public static void main(String[] args) {
 
         System.out.println("Hello 실행");
-        hello(() -> {
+        hello(() -> {   //v4 -> v5 : 람다식으로 만듦 - 메소드(함수)만 전달 가능
             int randomValue = new Random().nextInt(6) + 1;
             System.out.println("주시위 = " + randomValue);
         });

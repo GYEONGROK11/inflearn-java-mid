@@ -9,7 +9,7 @@ public class Ex1Main {
 
         //코드 조각 시작
         int randomValue = new Random().nextInt(6) + 1;
-        System.out.println("주시위 = " + randomValue);
+        System.out.println("주사위 = " + randomValue);
         //코드 조각 종료
 
         System.out.println("프로그램 종료");

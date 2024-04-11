@@ -17,7 +17,7 @@ public class Ex1RefMainV4 {
     public static void main(String[] args) {
 
         System.out.println("Hello 실행");
-        hello(new Process() {
+        hello(new Process() {  //v3 -> v4 : 바로 인수로 넣음
             public void run() {
                 int randomValue = new Random().nextInt(6) + 1;
                 System.out.println("주시위 = " + randomValue);

@@ -11,11 +11,17 @@ public class Library {
     }
 
     public void addBook(String title, String author) {
-        if (bookCount < books.length) {
+        if (bookCount >= books.length) {
+            System.out.println("도서관 저장 공간이 부족합니다.");
+            return;
+        }
+        books[bookCount++] = new Book(title, author);
+
+        /*if (bookCount < books.length) {
             books[bookCount++] = new Book(title, author);
         } else {
             System.out.println("도서관 저장 공간이 부족합니다.");
-        }
+        }*/
     }
 
     public void showBooks() {

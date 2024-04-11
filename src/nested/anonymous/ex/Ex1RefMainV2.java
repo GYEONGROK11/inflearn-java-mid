@@ -16,7 +16,7 @@ public class Ex1RefMainV2 {
 
     public static void main(String[] args) {
 
-        class Dice implements Process {
+        class Dice implements Process {  //v1 -> v2 : 지역클래스로 만듦
 
             @Override
             public void run() {

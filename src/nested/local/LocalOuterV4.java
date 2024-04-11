@@ -9,7 +9,8 @@ public class LocalOuterV4 {
     public Printer process(int paramVar) {
 
         int localVar = 1; //지역 변수는 스택 프레임이 종료되는 순간 함께 제거된다.
-
+        //지역 클래스가 접근하는 지역 변수는 중간에 값이 바뀌면 안된다 - 사실상 final로 취급
+        //localVar = 10; 바꾸면 캡쳐 때문에 컴파일 오류 - 인스턴스에 캡처한 값과 지역변수의 값이 달라지는 동기화 문제가 발생
         class LocalPrinter implements Printer {
 
             int value = 0;
@@ -25,7 +26,7 @@ public class LocalOuterV4 {
             }
         }
 
-        LocalPrinter printer = new LocalPrinter();
+        LocalPrinter printer = new LocalPrinter();  //생성시점에 지역변수 캡쳐
         // 만약 localVar의 값을 변경한다면? 다시 캡쳐해야 하나??
         // localVar = 10;
         // paramVar = 20;

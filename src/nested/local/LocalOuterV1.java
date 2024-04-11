@@ -2,11 +2,11 @@ package nested.local;
 
 public class LocalOuterV1 {
 
-    private int outInstanceVar = 3;
+    private int outInstanceVar = 3;  //인스턴스 변수
 
     public void process(int paramVar) {
 
-        int localVar = 1;
+        int localVar = 1;  //지역변수
 
         class LocalPrinter {
             int value = 0;

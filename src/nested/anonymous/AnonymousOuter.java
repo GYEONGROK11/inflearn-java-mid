@@ -10,7 +10,7 @@ public class AnonymousOuter {
 
         int localVar = 1;
 
-        Printer printer = new Printer() {
+        Printer printer = new Printer() {  //익명클래스 클래스를 정의하고 생성하는 것을 한번에 - 일회성
             int value = 0;
 
             @Override
@@ -24,6 +24,7 @@ public class AnonymousOuter {
 
         printer.print();
         System.out.println("printer.class=" + printer.getClass());
+
     }
 
     public static void main(String[] args) {

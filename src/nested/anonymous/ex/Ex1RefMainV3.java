@@ -16,7 +16,7 @@ public class Ex1RefMainV3 {
 
     public static void main(String[] args) {
 
-        Process dice = new Process() {
+        Process dice = new Process() {  //v2 -> v3 : 익명클래스로 만듦
             @Override
             public void run() {
                 int randomValue = new Random().nextInt(6) + 1;
