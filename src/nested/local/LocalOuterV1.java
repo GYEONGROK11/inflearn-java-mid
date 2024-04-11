@@ -12,10 +12,10 @@ public class LocalOuterV1 {
             int value = 0;
 
             public void printData() {
-                System.out.println("value=" + value);
-                System.out.println("localVar=" + localVar);
-                System.out.println("paramVar=" + paramVar);
-                System.out.println("outInstanceVar=" + outInstanceVar);
+                System.out.println("value=" + value);  //자신의 인스턴스 변수에 접근가능
+                System.out.println("localVar=" + localVar);  //자신이 속한 코드블록의 지역변수에 접근가능
+                System.out.println("paramVar=" + paramVar);  //자신이 속한 코드블록의 파라미터에 접근가능
+                System.out.println("outInstanceVar=" + outInstanceVar);  //자신이 속한 클래스의 인스턴스 변수에 접근가능
             }
         }
 

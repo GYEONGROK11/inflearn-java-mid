@@ -8,7 +8,7 @@ public class LocalOuterV2 {
 
         int localVar = 1;
 
-        class LocalPrinter implements Printer {
+        class LocalPrinter implements Printer {  //인터페이스 구현가능
             int value = 0;
 
             @Override
