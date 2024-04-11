@@ -4,6 +4,12 @@ import java.lang.reflect.Field;
 
 public class LocalOuterV3 {
 
+    /*변수의 생명 주기
+    클래스 변수 : 클래스가 로딩될 때 생성되고 클래스가 언로드될 때 소멸된다.   메서드 영역에 존재하고 가장 길다
+    인스턴스 변수 : 객체가 생성될 때 생성되고 객체가 소멸될 때 소멸된다.  힙 영역에 존재함 GC전 까지 생존
+    지역 변수 : 메서드가 호출될 때 생성되고 메서드가 종료될 때 소멸된다.  스택 영역에 존재함 가장 짧다
+    */
+
     private int outInstanceVar = 3;
 
     public Printer process(int paramVar) {
@@ -26,7 +32,7 @@ public class LocalOuterV3 {
 
         LocalPrinter printer = new LocalPrinter();
 
-        //printer.print();를 여기서 실행하지 않고 Printer 인스턴스만 반환한다.
+        //printer.print();를 여기서 실행하지 않고 Printer 인스턴스만 반환한다. 아래 메인메소드에서 실행
         return printer;
     }
 
