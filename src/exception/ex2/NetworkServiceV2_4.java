@@ -6,7 +6,7 @@ public class NetworkServiceV2_4 {
         String address = "http://example.com";
         NetworkClientV2 client = new NetworkClientV2(address);
         client.initError(data); //추가
-
+        //try-catch문을 밖으로 빼서 연결해제를 실행해줌 - 하지만 모르는 예외가 발생시 프로그램 종료됨
         try {
             client.connect();
             client.send(data);

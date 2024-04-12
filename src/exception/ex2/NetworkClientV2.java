@@ -20,11 +20,11 @@ public class NetworkClientV2 {
         System.out.println(address + " 서버 연결 성공");
     }
 
-    public void send(String data) throws NetworkClientExceptionV2 {
+    public void send(String data) throws NetworkClientExceptionV2{
         if (sendError) {
             throw new NetworkClientExceptionV2("sendError", address + " 서버에 데이터 전송 실패: " + data);
             //중간에 다른 예외가 발생했다고 가정
-            //throw new RuntimeException("ex");
+            //throw new RuntimeException("ex");  //V2_4처럼 모르는 예외가 발생시 send에서 프로그램 종료됨 finally로 연결해제를 무조건 실행해줌
         }
         //전송 성공
         System.out.println(address + " 서버에 데이터 전송: " + data);
