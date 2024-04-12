@@ -1,7 +1,8 @@
 package exception.ex2;
 
 public class NetworkClientV2 {
-
+    //정상흐름과 예외흐름을 분리해보자
+    //V1은 반환받은 값으로 처리를 하여 정상흐름을 한눈에 알아보기 어려움 - 정상흐름 예외흐름이 섞임
     private final String address;
     public boolean connectError;
     public boolean sendError;

@@ -8,7 +8,7 @@ public class Service {
      */
     public void callCatch() {
         try {
-            client.call();
+            client.call(); //예외임 - try에서 실행했을때 예외발생하면 catch로 이동
         } catch (MyCheckedException e) {
             //예외 처리 로직
             System.out.println("예외 처리, message=" + e.getMessage());
