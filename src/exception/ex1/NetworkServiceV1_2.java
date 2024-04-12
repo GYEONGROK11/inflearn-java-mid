@@ -24,7 +24,7 @@ public class NetworkServiceV1_2 {
         client.disconnect();
     }
 
-    private static boolean isError(String connectResult) {
-        return !connectResult.equals("success");  //연결 성공이 아니면 에러
+    private static boolean isError(String resultCode) {
+        return !resultCode.equals("success");  //연결 성공이 아니면 에러
     }
 }
