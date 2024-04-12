@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class MainV0 {
 
+
     public static void main(String[] args) {
         NetworkServiceV0 networkService = new NetworkServiceV0();
 

@@ -12,6 +12,7 @@ public class Service {
     /**
      * 필요한 경우 예외를 잡아서 처리할 수 있다.
      */
+
     public void callCatch() {
         try {
             client.call();

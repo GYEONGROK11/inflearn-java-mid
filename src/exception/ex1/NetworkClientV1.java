@@ -1,7 +1,7 @@
 package exception.ex1;
 
 public class NetworkClientV1 {
-
+    //예외처리 (연결과 보내기 에러) 추가
     private final String address;
     public boolean connectError;
     public boolean sendError;
@@ -37,10 +37,11 @@ public class NetworkClientV1 {
     }
 
     public void initError(String data) {
-        if (data.contains("error1")) {
+        if (data.contains("error1")) {  //error1이 포함되어 있으면 연결 에러
+                                        //contatins() 메서드는 문자열에 특정 문자열이 포함되어 있는지 확인하는 메서드
             connectError = true;
         }
-        if (data.contains("error2")) {
+        if (data.contains("error2")) {  //error2가 포함되어 있으면 전송 에러
             sendError = true;
         }
     }

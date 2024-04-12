@@ -1,7 +1,7 @@
 package exception.ex0;
 
 public class NetworkClientV0 {
-
+    //성공케이스일때 예외처리없음
     private final String address;
 
     public NetworkClientV0(String address) {
