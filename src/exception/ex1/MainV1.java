@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class MainV1 {
 
     public static void main(String[] args) {
-        //NetworkServiceV1_1 networkService = new NetworkServiceV1_1();
-        //NetworkServiceV1_2 networkService = new NetworkServiceV1_2();
+        //NetworkServiceV1_1 networkService = new NetworkServiceV1_1();  //연결실패해도 데이터를 전송함
+        //NetworkServiceV1_2 networkService = new NetworkServiceV1_2();  //실패하면 리턴 해서 연결 해제를 해야됨
         NetworkServiceV1_3 networkService = new NetworkServiceV1_3();
 
         Scanner scanner = new Scanner(System.in);

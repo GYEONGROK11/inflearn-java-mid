@@ -7,6 +7,9 @@ public class NetworkServiceV2_2 {
         NetworkClientV2 client = new NetworkClientV2(address);
         client.initError(data); //추가
 
+        //아직 정상흐름과 예외흐름이 섞여있음  V2_3에서 처리
+        //리턴해서 디스커넥트를 실행 해야됨   V2_4에서 처리
+
         try {
             client.connect();
         } catch (NetworkClientExceptionV2 e) {

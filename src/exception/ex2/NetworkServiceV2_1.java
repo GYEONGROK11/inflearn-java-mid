@@ -7,6 +7,7 @@ public class NetworkServiceV2_1 {
         NetworkClientV2 client = new NetworkClientV2(address);
         client.initError(data); //추가
 
+        //에러를 던지면서 프로그램이 종료됨 V2_2에서 처리
         client.connect();
         client.send(data);
         client.disconnect();

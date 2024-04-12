@@ -3,6 +3,7 @@ package exception.ex2;
 public class NetworkClientV2 {
     //정상흐름과 예외흐름을 분리해보자
     //V1은 반환받은 값으로 처리를 하여 정상흐름을 한눈에 알아보기 어려움 - 정상흐름 예외흐름이 섞임
+    //V2는 try-catch문을 사용하여 예외처리를 하여 예외흐름을 따로 분리하여 알아보기 쉬움
     private final String address;
     public boolean connectError;
     public boolean sendError;
@@ -11,7 +12,7 @@ public class NetworkClientV2 {
         this.address = address;
     }
 
-    public void connect() throws NetworkClientExceptionV2 {
+    public void connect() throws NetworkClientExceptionV2 {  //반환값을 받을 필요 없이 void로 처리
         if (connectError) {
             throw new NetworkClientExceptionV2("connectError", address + " 서버 연결 실패");
         }

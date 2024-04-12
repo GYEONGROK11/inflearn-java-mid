@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class MainV2 {
     public static void main(String[] args) throws NetworkClientExceptionV2 {
-        NetworkServiceV2_1 networkService = new NetworkServiceV2_1();
-        //NetworkServiceV2_2 networkService = new NetworkServiceV2_2();
-        //NetworkServiceV2_3 networkService = new NetworkServiceV2_3();
-        //NetworkServiceV2_4 networkService = new NetworkServiceV2_4();
+        //NetworkServiceV2_1 networkService = new NetworkServiceV2_1();  //예외처리 도입, 복구는 안됨 - 프로그램 종료됨
+        //NetworkServiceV2_2 networkService = new NetworkServiceV2_2();  //예외처리 도입, 복구는 됨 - 정상흐름과 예외흐름 구분X, 리턴되서 연결해제는 실행 안됨
+        //NetworkServiceV2_3 networkService = new NetworkServiceV2_3();  //정상흐름과 예외흐름 구분, 리턴되서 연결해제는 실행 안됨
+        NetworkServiceV2_4 networkService = new NetworkServiceV2_4();
         //NetworkServiceV2_5 networkService = new NetworkServiceV2_5();
 
         Scanner scanner = new Scanner(System.in);
