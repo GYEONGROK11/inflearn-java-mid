@@ -22,7 +22,7 @@ public class NetworkServiceV3_2 {
             System.out.println("[네트워크 오류] 메시지: " + e.getMessage());
         } catch (Exception e) { //어떤 예외든 잡음
             System.out.println("[알 수 없는 오류] 메시지: " + e.getMessage());
-        //위에서 부터 세부적으로 잡음 아래로 내려갈수록 큰 에러 범위
+        //catch를 순차적으로 잡기 때문에 위에서 부터 세부적인 범위 아래로 내려갈수록 큰 에러 범위
 
         } finally {
             client.disconnect();
