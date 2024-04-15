@@ -7,6 +7,8 @@ import java.util.Scanner;
 public class MainV4 {
 
     public static void main(String[] args) {
+        //실무 : 1 처리할 수 없는 예외 존재 - 우리가 복구 할 수 없는 예외가 존재함
+        //2 체크예외는 거의 사용하지않음 - 어떤 예외가 터질지 모르기 때문, 체크 대상을 일일이 명시해야됨
         //NetworkServiceV4 networkService = new NetworkServiceV4();
         NetworkServiceV5 networkService = new NetworkServiceV5();
 
