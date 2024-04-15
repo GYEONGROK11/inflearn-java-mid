@@ -44,7 +44,7 @@ public class NetworkClientV5 implements AutoCloseable {
     }
 
     @Override
-    public void close() {
+    public void close() { //자동 디스커넥트 연결해제
         System.out.println("NetworkClientV5.close");
         disconnect();
     }

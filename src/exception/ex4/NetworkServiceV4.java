@@ -10,6 +10,7 @@ public class NetworkServiceV4 {
         try {
             client.connect();
             client.send(data);
+            //개발자 입장에서 이런 예외를 복구할 수 없음
         } finally {
             client.disconnect();
         }

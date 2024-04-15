@@ -13,7 +13,7 @@ public class NetworkClientV4 {
         this.address = address;
     }
 
-    public void connect() {
+    public void connect() { //throws 생략
         if (connectError) {
             throw new ConnectExceptionV4(address, address + " 서버 연결 실패");
         }
