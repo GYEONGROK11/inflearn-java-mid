@@ -1,7 +1,7 @@
 package lang.string.builder;
 
 public class StringBuilderMain1_1 {
-    //불변인 스트링을 가변 스트링을 사용함
+    //불변인 스트링을 가변 스트링으로 사용함
     public static void main(String[] args) {
         StringBuilder sb = new StringBuilder();
         sb.append("A");

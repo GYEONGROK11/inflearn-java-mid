@@ -30,7 +30,7 @@ public class MainV4 {
         System.out.println("프로그램을 정상 종료합니다.");
     }
 
-    //공통 예외 처리 - 서비스에서 올라온 모든 언체크 예외 처리
+    //공통 예외 처리 - 서비스에서 올라온 모든 언체크 예외 처리 (V4)
     private static void exceptionHandler(Exception e) {
         //공통 처리
         System.out.println("사용자 메시지: 죄송합니다. 알 수 없는 문제가 발생했습니다.");
