@@ -10,6 +10,8 @@ public class NetworkServiceV5 {
             client.initError(data); //추가
             client.connect();
             client.send(data);
+            //catch 블록을 만나기 전에 자동으로 close() 호출 -
+            //장점 : 좀더 빠르게 자원 해제, 리소스 누수 방지, 코드 간결성 및 가독성, 스코프 범위 한정
         } catch (Exception e) {
             System.out.println("[예외 확인]: " + e.getMessage());
             throw e;
